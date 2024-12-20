@@ -1,0 +1,66 @@
+# .gitignore for Symfony 7.2
+
+### Generic ###
+*.log
+*.cache
+*.env.local
+*.env.local.php
+.env
+.env.*
+phpunit.xml
+phpunit.xml.dist
+vendor/
+node_modules/
+var/
+public/bundles/
+public/build/
+public/uploads/
+
+### Composer ###
+/composer.phar
+/composer.lock
+
+### Symfony ###
+/.symfony
+/.env.local.php
+/config/secrets/*/*.key
+/config/secrets/prod/prod.decrypt.private.php
+/src/.phpunit.result.cache
+/.phpunit.result.cache
+
+### IDEs ###
+.idea/
+.vscode/
+*.iml
+
+### Logs and Temp ###
+/var/log/
+/var/cache/
+
+### Security ###
+/config/jwt/private.pem
+/config/jwt/public.pem
+
+### Front-end ###
+/public/build/
+/public/assets/
+/yarn.lock
+/pnpm-lock.yaml
+/package-lock.json
+.DS_Store
+
+### Docker ###
+/docker-compose.override.yml
+.dockerignore
+*.tar
+
+### NodeJS ###
+/node_modules/
+/dist/
+/coverage/
+
+### Misc ###
+*.swp
+*.swo
+*.bak
+*.old
